@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Display Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body style="display: flex; justify-content: center">
+        <form class="container">
+        
+            <h1 style="align-content: center">HEY!!, 
+                <br><span id="fName"></span><span> </span><span id="lName"></span>
+                ( <span id="showEmail"></span> )<br>
+                from <span id="showAdress"></span><br>
+                from batch of <span id="showYear"></span>
+                <span id="showProgram"></span>.<br>
+                Thank you for registering!!
+            </h1>
+            
+        
+        </form>
+        <script>
+                document.getElementById("fName").innerHTML = localStorage.getItem("name");
+                document.getElementById("lName").innerHTML = localStorage.getItem("name2");
+                document.getElementById("showEmail").innerHTML = localStorage.getItem("email");
+                document.getElementById("showAdress").innerHTML = localStorage.getItem("adress");
+                document.getElementById("showProgram").innerHTML = localStorage.getItem("program");
+                document.getElementById("showYear").innerHTML = localStorage.getItem("year");
+                localStorage.clear();
+        </script>
+    </body>
+</html>
